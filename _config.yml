@@ -2,6 +2,7 @@ theme: jekyll-theme-minimal
 
 title: LesPam
 description: "My personal website"
+logo: /assets/img/repository-logo.png
 
 is_user_page: true
 owner_gravatar_url: "https://github.com/github.png"
