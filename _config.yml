@@ -1,9 +1,8 @@
 theme: jekyll-theme-minimal
 
-title: Leslie Brenes
-description: "LesPam's personal website"
+title: LesPam
+description: "My personal website"
 
 is_user_page: true
 owner_gravatar_url: "https://github.com/github.png"
-project_title: "Leslie Brenes"
 owner_name: "lespam"
