@@ -10,22 +10,15 @@ Aprendí a amar los abrazos.
 
 Discord: sun#0008
 
-### @
-
+<span style="color:rgb(181, 232, 83);">
 Les
-
 Pam
-
 lespam_
-
 LesPam
-
 LesPamB
-
 sun
-
 lespam._
-
+</span>
 
 ```markdown
 Bienvenidx a la revolución digital.
