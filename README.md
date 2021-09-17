@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+## 2021
 
-You can use the [editor on GitHub](https://github.com/lespam/lespam.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Mi mision es ayudar a través de la tecnología.
+Quiero un mundo más humano.
+Defiendo la accesibilidad.
+Amo bailar.
+Trabajo como qa tester. Paso el día en mi computadora, el bosque, o con mi familia. Este año inicia una nueva etapa de mi vida.
+Soy apasionada. A veces es intenso.
+Aprendí a amar los abrazos.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Discord: sun#0008
 
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+Bienvenido a la revolución digital.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+![Image](https://media.giphy.com/media/BLciPXfFvGc7vBukkN/giphy-downsized-large.gif?cid=790b7611f431819d643c5321959f29224a366929f29ea25b&rid=giphy-downsized-large.gif&ct=g)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lespam/lespam.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
