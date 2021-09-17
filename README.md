@@ -16,6 +16,5 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 ```markdown
 Bienvenido a la revolución digital.
-
-![Image](https://media.giphy.com/media/BLciPXfFvGc7vBukkN/giphy-downsized-large.gif?cid=790b7611f431819d643c5321959f29224a366929f29ea25b&rid=giphy-downsized-large.gif&ct=g)
 ```
+![Image](https://media.giphy.com/media/BLciPXfFvGc7vBukkN/giphy-downsized-large.gif?cid=790b7611f431819d643c5321959f29224a366929f29ea25b&rid=giphy-downsized-large.gif&ct=g)
