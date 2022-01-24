@@ -17,8 +17,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-#title: LesPam #abajo
-description: "Soy Leslie. Mujer STEM mexicana. Mis intereses son: UX, HCI, accessibilidad, justicia social, arte, economía, administración de projectos y más. Aquí puedes encontrar más información sobre mí. Mis redes sociales, lo que pienso y lo que hago. Estoy a un clic de distancia :)"
+title: lespam\\ #abajo
 #logo: /assets/img/repository-logo.png
 #logo: https://avatars.githubusercontent.com/u/23329703?v=4
 
@@ -27,6 +26,7 @@ owner_gravatar_url: "https://github.com/github.png"
 owner_name: "lespam"
 
 email: lesliepbv@gmail.com
+description: "Soy Leslie. Mujer STEM mexicana. Mis intereses son: UX, HCI, accessibilidad, justicia social, arte, economía, administración de projectos y más. Aquí puedes encontrar más información sobre mí. Mis redes sociales, lo que pienso y lo que hago. Estoy a un clic de distancia :)"
 #description: >- # this means to ignore newlines until "baseurl:"
 #  Write an awesome description for your new site here. You can edit this
 #  line in _config.yml. It will appear in your document head meta (for
@@ -51,8 +51,7 @@ footer: 'Let the revolution begin. Estoy a un tap de distancia :)'
 #google_analytics: G-Z1FXPBGQSR
 listen_for_clients_preferred_style: true
 style: hacker # dark (default), light or hacker
-title: 'lespam\\'
-lang: es
+#lang: es
 
 plugins:
   - jekyll-feed
