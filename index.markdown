@@ -1,10 +1,23 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
+title: Index
+permalink: /
 ---
-Sobre mí: Nací en 1994. Soy Virgo de Agosto. Más en: [About](about)
+
+Sobre mí: 
+Soy Leslie y Pamela. Me gusta lespam. Tengo una visión holística del mundo.
+Estudié Ingeniería en Computación en el ITAM. Un trauma.
+Trabajo remoto como *qa tester*. Te puedo recomendar para vacantes.
+Mi cuerpo es arte, música y danza.
+Siento pasión, intensidad y soy una rebelde natural.
+
+Mi animal espiritual: pantera negra
+Animal favorito: Ballena 🐳
+Estilo: ecléctico
+Dog lover
+
+
+Nací en 1994. Soy Virgo de Agosto. Más en: [About](about)
 
 [Música](cancion-del-mes)
 
