@@ -17,8 +17,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: LesPam
-description: "LesPam: mi sitio personal"
+#title: LesPam #abajo
+description: "Soy Leslie. Mujer STEM mexicana. Mis intereses son: UX, HCI, accessibilidad, justicia social, arte, economía, administración de projectos y más. Aquí puedes encontrar más información sobre mí. Mis redes sociales, lo que pienso y lo que hago. Estoy a un clic de distancia :)"
 #logo: /assets/img/repository-logo.png
 #logo: https://avatars.githubusercontent.com/u/23329703?v=4
 
@@ -32,22 +32,32 @@ email: lesliepbv@gmail.com
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
 baseurl: "/" # the subpath of your site, e.g. /blog
-domain: "lespam.github.io"
-url: "https://lespam.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+domain: "lespam.fun"
+url: "https://lespam.fun" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lespam._
 github_username:  lespam
 
 # Build settings
-#theme: minima
-#remote_theme: pages-themes/hacker@v0.2.0
-theme: jekyll-theme-hacker
+remote_theme: b2a3e8/jekyll-theme-console
+#theme: jekyll-theme-console
+#theme: jekyll-theme-hacker
 
 #show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
-#google_analytics: [Your Google Analytics tracking ID]
+header_pages: 
+  - index.md
+  - about.md
+footer: 'Let the revolution begin. Estoy a un clic de distancia :)'
+google_analytics: G-Z1FXPBGQSR
+listen_for_clients_preferred_style: true
+style: hacker # dark (default), light or hacker
+title: 'lespam\\'
+lang: es
 
 plugins:
   - jekyll-feed
   - jekyll-remote-theme # add this line to the plugins list if you already have one
+  
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
