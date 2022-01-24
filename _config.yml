@@ -47,7 +47,8 @@ header_pages:
   - index.markdown
   - about.markdown
 footer: 'Let the revolution begin. Estoy a un tap de distancia :)'
-google_analytics: G-Z1FXPBGQSR
+#google_analytics: 'G-Z1FXPBGQSR'
+#google_analytics: G-Z1FXPBGQSR
 listen_for_clients_preferred_style: true
 style: hacker # dark (default), light or hacker
 title: 'lespam\\'
