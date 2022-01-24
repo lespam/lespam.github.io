@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Index
+title: lespam\\
 permalink: /
 ---
 
@@ -16,8 +16,6 @@ Animal favorito: Ballena 🐳
 Estilo: ecléctico
 Dog lover
 
-
-Nací en 1994. Soy Virgo de Agosto. Más en: [About](about)
 
 [Música](cancion-del-mes)
 
