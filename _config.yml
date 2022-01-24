@@ -44,9 +44,9 @@ remote_theme: b2a3e8/jekyll-theme-console
 
 #show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
 header_pages: 
-  - index.md
-  - about.md
-footer: 'Let the revolution begin. Estoy a un clic de distancia :)'
+  - index.markdown
+  - about.markdown
+footer: 'Let the revolution begin. Estoy a un tap de distancia :)'
 google_analytics: G-Z1FXPBGQSR
 listen_for_clients_preferred_style: true
 style: hacker # dark (default), light or hacker
