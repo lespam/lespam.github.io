@@ -38,9 +38,9 @@ twitter_username: lespam._
 github_username:  lespam
 
 # Build settings
-remote_theme: b2a3e8/jekyll-theme-console
+#remote_theme: b2a3e8/jekyll-theme-console
 #theme: jekyll-theme-console
-#theme: jekyll-theme-hacker
+theme: jekyll-theme-hacker
 
 #show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
 header_pages: 
