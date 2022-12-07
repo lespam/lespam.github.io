@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Quien soy
+#title: Quien soy
 permalink: /
 ---
 
