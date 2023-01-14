@@ -31,5 +31,5 @@ github_username:  lespam
   #- jekyll-remote-theme
   
 
-exclude: ['src' , 'node_modules']
+exclude: ['src' , 'node_modules', 'assets/css/main.css.map']
 
