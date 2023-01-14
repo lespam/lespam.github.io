@@ -2,7 +2,7 @@
 title: Les
 description: Sitio web de Leslie Brenes.
 baseurl: "/temp" # the subpath of your site, e.g. /blog
-domain: "lespam.fun"
+domain: "lespam.fun/temp"
 url: "https://lespam.fun/temp" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
