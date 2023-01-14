@@ -1,0 +1,19 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "echo",
+        "type": "shell",
+        "command": "echo Hello"
+      },
+      {
+        "label": "sass Compile",
+        "type": "shell",
+        "command": "sass 'src/styles/main.scss' 'assets/css/main.css'",
+        "group": "build",
+        "problemMatcher": []
+      }
+    ]
+  }
