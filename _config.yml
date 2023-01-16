@@ -1,10 +1,12 @@
 # Site settings
 title: Les
 description: Sitio web de Leslie Brenes.
-baseurl: "/temp" # the subpath of your site, e.g. /blog
-domain: "lespam.fun/temp"
-url: "https://lespam.fun/temp" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
-
+baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "" # the subpath of your site, e.g. /blog
+domain: "lespam.fun/"
+#domain: "lespam.fun"
+url: "https://lespam.fun/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+# url: "https://lespam.fun"
 # User settings
 username: Leslie Brenes
 user_description: <div class="section">Soy Leslie Pamela. Algunos me llaman lespam for mi facebook. Tengo una visión holística del mundo.  
@@ -31,5 +33,5 @@ github_username:  lespam
   #- jekyll-remote-theme
   
 
-exclude: ['src' , 'node_modules', 'assets/css/main.css.map']
+exclude: ['src' , 'node_modules']
 

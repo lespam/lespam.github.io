@@ -11,7 +11,7 @@
       {
         "label": "sass Compile",
         "type": "shell",
-        "command": "sass 'src/styles/main.scss' 'assets/css/main.css'",
+        "command": "sass 'src/styles/main.scss' 'assets/css/main.css' --style compressed --sourcemap=none",
         "group": "build",
         "problemMatcher": []
       }
