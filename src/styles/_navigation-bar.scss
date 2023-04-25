@@ -100,7 +100,8 @@
   position: absolute;
   /*WITH RESPECT TO PARENT*/
 
-  display: block;
+  /*display: block; default is none*/
+  display: none;
 
   border-radius: 8px;
   border-top-left-radius: 0px;
@@ -169,6 +170,8 @@ input[type=checkbox] {
 
   font-size: 24px;
 
+  
+  -webkit-user-select: none;
   user-select: none;
 
 }
