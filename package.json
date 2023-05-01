@@ -9,6 +9,6 @@
   "author": "Leslie Brenes <lesliepbv@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    
+    "devicon": "^2.15.1"
   }
 }

@@ -44,3 +44,51 @@
     font-weight: 400;
   }
 }
+
+
+
+.user-about-profile {
+  margin: 5px auto;
+  display: flex;
+  h1 {
+    font-weight: 400;
+  }
+  flex-direction: column;
+  @media only screen and (min-width: $cut) {
+    flex-direction: row-reverse;
+  }
+  img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+  }
+}
+
+
+.contents-left-profile {
+  justify-content: center;
+  align-items: center;
+}
+
+.contents-right-profile {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+
+.images-right-profile { 
+  border-radius: 50%;
+  margin-top: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);;
+  margin-bottom: 20px;
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    display: block;
+  }
+}
