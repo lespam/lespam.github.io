@@ -39,10 +39,16 @@
 }
 
 .user-details {
-  text-align: left;
+  text-align: center;
   margin: 5px auto;
+  @media only screen and (min-width: $cut) {
+    text-align: left;
+  }
   h1 {
     font-weight: 400;
+  }
+  p {
+    text-align: left;
   }
 }
 
@@ -72,7 +78,7 @@
 }
 
 .contents-right-profile {
-  display: inline;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
