@@ -1,6 +1,6 @@
 #about {
   font-size: 120%;
-  
+  text-align: center;
   width: 90%;
   margin: 0 auto;
   max-width: 960px;
@@ -45,7 +45,11 @@
     text-align: left;
   }
   h1 {
+    text-align: center;
     font-weight: 400;
+    @media only screen and (min-width: $cut) {
+      text-align: left;
+    }
   }
   p {
     text-align: left;
@@ -59,15 +63,11 @@
   display: flex;
   h1 {
     font-weight: 400;
+    text-align: center;
   }
   flex-direction: column;
   @media only screen and (min-width: $cut) {
     flex-direction: row-reverse;
-  }
-  img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 50%;
   }
 }
 
@@ -94,8 +94,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
     display: block;
   }
 }

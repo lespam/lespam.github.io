@@ -389,6 +389,7 @@ input[type=checkbox] {
 }
 #about {
   font-size: 120%;
+  text-align: center;
   width: 90%;
   margin: 0 auto;
   max-width: 960px;
@@ -440,7 +441,13 @@ input[type=checkbox] {
   }
 }
 .user-details h1 {
+  text-align: center;
   font-weight: 400;
+}
+@media only screen and (min-width: 768px) {
+  .user-details h1 {
+    text-align: left;
+  }
 }
 .user-details p {
   text-align: left;
@@ -453,16 +460,12 @@ input[type=checkbox] {
 }
 .user-about-profile h1 {
   font-weight: 400;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .user-about-profile {
     flex-direction: row-reverse;
   }
-}
-.user-about-profile img {
-  max-width: 300px;
-  height: auto;
-  border-radius: 50%;
 }
 
 .contents-left-profile {
@@ -489,6 +492,9 @@ input[type=checkbox] {
   align-items: center;
 }
 .images-right-profile img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
   display: block;
 }
 
