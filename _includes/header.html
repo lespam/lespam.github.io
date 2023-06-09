@@ -5,8 +5,8 @@
         <span class="site-description">{{ site.user_title }}</span>
       </h1>
       <div class="header-icons">
-        {% if site.email %}
-        <a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i></a>
+        {% if site.blog_url %}
+        <a aria-label="Blog" href="{{ site.blog_url }}"><i class="icon fa fa-user-circle-o"></i></a>
         {% endif %}
         {% if site.twitter_username %}
         <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
