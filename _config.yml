@@ -1,5 +1,5 @@
 # Site settings
-title: Les
+title: Leslie Dickinson's Website
 description: Sitio web de Leslie Dickinson.
 baseurl: "" # the subpath of your site, e.g. /blog
 #baseurl: "" # the subpath of your site, e.g. /blog
@@ -8,8 +8,8 @@ domain: "lespam.fun/"
 url: "https://lespam.fun/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 # url: "https://lespam.fun"
 # User settings
-username: Leslie Brenes
-user_description: I am Leslie Brenes, a bilingual Hispanic neurodivergent woman and SQA tester passionate about Human-Computer Interaction, Usability, and Accessibility.
+username: Leslie Dickinson
+user_description: A bilingual Hispanic neurodivergent woman and SQA tester passionate about Human-Computer Interaction, Usability, and Accessibility.
 user_title: Bilingual QA Consultant
 #email: lesliepbv@gmail.com
 #blog_url: /blog
