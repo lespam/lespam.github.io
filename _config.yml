@@ -3,9 +3,9 @@ title: Leslie Dickinson's Website
 description: Leslie Dickinson's Website
 baseurl: "" # the subpath of your site, e.g. /blog
 #baseurl: "" # the subpath of your site, e.g. /blog
-domain: "lespam.fun/"
+domain: "lesliedickinson.dev/"
 #domain: "lespam.fun"
-url: "https://lespam.fun/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "https://lesliedickinson.dev/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 # url: "https://lespam.fun"
 # User settings
 username: Leslie Dickinson
