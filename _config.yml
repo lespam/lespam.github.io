@@ -5,7 +5,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 #baseurl: "" # the subpath of your site, e.g. /blog
 domain: "lesliedickinson.dev/"
 #domain: "lespam.fun"
-url: "https://lesliedickinson.dev/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "https://lesliedickinson.dev" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 # url: "https://lespam.fun"
 # User settings
 username: Leslie Dickinson
