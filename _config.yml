@@ -1,6 +1,6 @@
 # Site settings
 title: Leslie Dickinson's Website
-description: Sitio web de Leslie Dickinson.
+description: Leslie Dickinson's Website
 baseurl: "" # the subpath of your site, e.g. /blog
 #baseurl: "" # the subpath of your site, e.g. /blog
 domain: "lespam.fun/"
@@ -9,8 +9,8 @@ url: "https://lespam.fun/" # the base hostname & protocol for your site e.g. htt
 # url: "https://lespam.fun"
 # User settings
 username: Leslie Dickinson
-user_description: A bilingual Hispanic neurodivergent woman and SQA tester passionate about Human-Computer Interaction, Usability, and Accessibility.
-user_title: Bilingual QA Consultant
+user_description: A software quality engineer with 5+ years of experience in manual and automatic testing who can plan, execute, and report test cases, as well as coordinate with developers and stakeholders to ensure the security, quality and functionality of the software products
+user_title: Software QA Tester, Test Automation Engineer, UX expert, Bilingual
 #email: lesliepbv@gmail.com
 #blog_url: /blog
 # twitter_username: lorem_ipsum

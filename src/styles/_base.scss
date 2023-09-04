@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Raleway');
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab|Antic+Slab');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -19,15 +20,17 @@ body {
     line-height: 1.5;
     color: #555;
 
+    //background-color: white;
     background-color: white;
     z-index: 1000;
-    font-family: 'Antic Slab', serif;
+    // font-family: 'Antic Slab', serif;
+    font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
 }
 article, aside, figcaption, figure, footer, header, nav, section {
     display: block;
 }
-h1, h2, h3, h4, stong {
+h1, h2, h3, h4, strong {
     margin-top: 1em;
     padding-top: 1em;
     line-height: 1.25;

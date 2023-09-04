@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Raleway");
 @import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab|Antic+Slab");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,7 +18,7 @@ body {
   color: #555;
   background-color: white;
   z-index: 1000;
-  font-family: "Antic Slab", serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 400;
 }
 
@@ -25,7 +26,7 @@ article, aside, figcaption, figure, footer, header, nav, section {
   display: block;
 }
 
-h1, h2, h3, h4, stong {
+h1, h2, h3, h4, strong {
   margin-top: 1em;
   padding-top: 1em;
   line-height: 1.25;
@@ -64,6 +65,28 @@ a img {
 sup, sub {
   line-height: 0;
 }
+
+@-webkit-keyframes pulse {
+  from {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    top: 0;
+  }
+  50% {
+    -ms-filter: none;
+    -webkit-filter: none;
+    filter: none;
+    opacity: 1;
+    top: -10px;
+  }
+  to {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    top: 0;
+  }
+}
 @keyframes pulse {
   from {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
@@ -73,6 +96,7 @@ sup, sub {
   }
   50% {
     -ms-filter: none;
+    -webkit-filter: none;
     filter: none;
     opacity: 1;
     top: -10px;
@@ -85,7 +109,7 @@ sup, sub {
   }
 }
 #particles-js {
-  background: #1a222c;
+  background: #BFAF92;
   display: flex;
   vertical-align: bottom;
   min-height: 100vh;
@@ -98,7 +122,7 @@ sup, sub {
 }
 
 .header {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   z-index: 1;
   text-align: center;
   color: #FFF;
@@ -106,6 +130,7 @@ sup, sub {
   top: 50%;
   left: 50%;
   margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 .header .site-title {
@@ -175,11 +200,11 @@ sup, sub {
   transition: all 0.5s;
 }
 .header-icons .icon:hover {
-  color: #1a222c;
+  color: #BFAF92;
   background: #FFF;
 }
 .header-icons .icon:active {
-  color: #1a222c;
+  color: #BFAF92;
   background: #FFF;
 }
 @media only screen and (min-width: 768px) {
@@ -209,13 +234,16 @@ sup, sub {
 }
 .down .icon {
   position: absolute;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
   fill: #fff;
+  -webkit-animation: pulse 1.3s infinite;
   animation: pulse 1.3s infinite;
 }
 .down .icon:hover {
@@ -226,7 +254,7 @@ sup, sub {
 }
 
 #particles-js-nav {
-  background: #1a222c;
+  background: #BFAF92;
   display: flex;
   vertical-align: bottom;
   min-height: 7vh;
@@ -294,7 +322,7 @@ sup, sub {
 
 .dropdown {
   list-style: none;
-  background-color: #1a222c;
+  background-color: #BFAF92;
   padding: 0 0 30px 0;
   position: absolute;
   /*WITH RESPECT TO PARENT*/
@@ -344,8 +372,7 @@ input[type=checkbox] {
   display: none;
   font-size: 24px;
   -webkit-user-select: none;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 /* APPLYING MEDIA QUERIES */
@@ -353,7 +380,7 @@ input[type=checkbox] {
   .menu {
     display: none;
     position: absolute;
-    background-color: #1a222c;
+    background-color: #BFAF92;
     right: 0;
     left: 0;
     text-align: center;
@@ -528,7 +555,7 @@ input[type=checkbox] {
   margin: 0;
 }
 .user-projects li {
-  color: #1a222c;
+  color: #BFAF92;
   font-size: 1.1rem;
 }
 .user-projects p {
@@ -578,9 +605,9 @@ input[type=checkbox] {
   display: inline-block;
   margin: 10px 0px;
   padding: 5px;
-  color: #1a222c;
+  color: #BFAF92;
   background-color: transparent;
-  border: 1px solid #1a222c;
+  border: 1px solid #BFAF92;
   border-radius: 10px;
   text-align: center;
   outline: none;
@@ -602,7 +629,7 @@ input[type=checkbox] {
 }
 
 .footer {
-  background: #1a222c;
+  background: #BFAF92;
   padding: 10px 0;
   margin-top: 100px;
   text-align: center;
