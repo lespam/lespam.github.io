@@ -1,20 +1,25 @@
+---
+---
+
 <!DOCTYPE html>
 
+<link rel="stylesheet" href="../assets/css/styles.css">
+<!-- DEVICON in your header https://github.com/devicons/devicon -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-
-          
 <html lang="en">
-  {% include head.html %}
-  <body>
-      {% include header.html %}
-      <section id="about">
-        {% include about.html %}
-      </section>
-      <section id="projects">
-        
-      </section>
-        {{ content }}
-      {% include footer.html %}
-  </body>
+
+{% include head.html %}
+
+<body>
+
+
+
+
+  {{ content }}
+
+
+</body>
+{% include footer.html %}
+
 </html>

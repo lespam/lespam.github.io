@@ -1,0 +1,247 @@
+
+.navigation-bar {
+  background-color: $main;
+
+  position: fixed;
+
+  font-family: inherit;
+
+  text-align: right;
+  
+  color: white;  
+
+  width: 100%;
+  
+  margin: 0 auto;
+  
+  z-index: 1000;
+}
+
+section {
+  padding-top: max(1em, 30px);
+}
+/* NAVBAR STYLING STARTS */
+
+.navbar {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 5px;
+
+  background-color: transparent;
+
+  color: #ffffff;
+}
+
+.nav-links a {
+  color: #ffffff;
+}
+
+/* LOGO */
+
+.logo {
+  font-size: 30px;
+}
+
+/* NAVBAR MENU */
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 20px;
+
+  a {
+    text-decoration: none;
+  }
+
+}
+
+.menu li:hover {
+
+  background-color: $shad;
+  border-radius: 5px;
+  transition: 0.3s ease;
+
+}
+
+.menu li {
+
+  padding: 5px 14px;
+
+}
+
+/* DROPDOWN MENU */
+
+.services {
+
+  position: relative;
+
+}
+
+.dropdown {
+
+  list-style: none;
+
+  background-color: $main;
+
+  padding: 0 0 30px 0;
+
+  position: absolute;
+  /*WITH RESPECT TO PARENT*/
+
+  /*display: block; default is none*/
+  display: none;
+
+  border-radius: 8px;
+  border-top-left-radius: 0px;
+
+  margin-top: 35px;
+
+  top: 0px;
+
+  left: 0;
+
+  z-index: 1;
+
+}
+
+.dropdown li+li {
+  
+  margin-top: 10px;
+  
+}
+
+.dropdown li {
+  
+  border-radius: 8px;
+  
+  padding: 0.5em 1em;
+  
+  width: 8em;
+  
+  text-align: center;
+  
+}
+
+.dropdown li:first-child {
+    border-top-left-radius: 0px;
+  }
+
+.dropdown li:focus-within,
+.dropdown li:hover {
+
+  background-color: $shad;
+
+}
+
+.services:hover .dropdown {
+
+  display: block;
+  transition: 0.9s ease;
+
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+
+  display: none;
+
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+
+  display: none;
+
+  font-size: 24px;
+
+  
+  -webkit-user-select: none;
+  user-select: none;
+
+}
+
+
+/* APPLYING MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+  .menu {
+
+    display: none;
+
+    position: absolute;
+
+    background-color: $main;
+
+    right: 0;
+
+    left: 0;
+
+    text-align: center;
+
+    padding: 16px 0;
+
+  }
+
+  .menu li:focus-within,
+  .menu li:hover {
+
+    display: block;
+
+    background-color: $shad;
+
+    transition: 0.3s ease;
+
+  }
+
+  .menu li+li {
+
+    margin-top: 12px;
+
+  }
+
+  input[type=checkbox]:checked~.menu {
+
+    display: block;
+
+  }
+
+  .hamburger {
+
+    display: block;
+
+  }
+
+  .dropdown {
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0px;
+    border-radius: 5px;
+
+  }
+
+  .dropdown li {
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 5px;
+  }
+
+  .dropdown li:first-child {
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+
+}
+
+
+
