@@ -1,43 +1,17 @@
-<h1> Featured Projects 📚</h1>
-<div class="user-details">
-    
-    <div class="user-projects">
-      <div class="images-right">
-        <img alt="cara-a-cara" src="{{ "/assets/images/cara-a-cara.jpg" | prepend: site.baseurl }}" />
-      </div>
-      
-      <div class="contents">
-        <h3> Cara a Cara </h3>
-        <ul>
-          <li>Featured Skills: Facial Recognition testing, Leadership, Fund raising, Team Building.</li>
-        </ul>
-        <p>One of the projects that I'm most proud of is Cara a Cara, an installation that uses facial recognition
-          technology to create an exercise of memory and awareness about the disappearance in Mexico. It identifies
-          similarities between the face of the person who experiences the installation and the faces of thousands of
-          people who have disappeared in Mexico. 😢 We wanted to preserve and promote the memory and dignity of these
-          people, as well as raise awareness and empathy among the public. 💖</p>
-          
-          <a class="project-link" href="https://www.datalabitam.org/blog/cara-a-cara/">Go check it out</a>
-        </div>
-      </div>
-      
-      <div class="user-projects">
-        <div class="images-left">
-          <img alt="justicia-transparente" src="{{ "/assets/images/justicia-transparente.jpg" | prepend: site.baseurl }}" />
-        </div>
-        
-        <div class="contents-right">
-          <h3> Justicia transparente </h3>
-          <ul>
-            <li>Featured Skills: Web Scraping, Data extraction, Collaboration, XPath and CSS Selectors.</li>
-          </ul>
-          <p>Another project that I really enjoyed working on was Justicia Transparente, a tool that analyzes and visualizes
-            the sentences issued by the Supreme Court of Justice of Mexico. 🇲🇽 It uses Python and Selenium to extract relevant information from the sentences, such as the topics, actors and
-            arguments. 🧠 It also allows users to explore and compare the sentences according to
-            different criteria, such as date, chamber, minister, or type of case. 📊 We wanted to improve the transparency
-            and accountability of the judicial system in Mexico, as well as foster civic engagement and education. The project created an initial methodology with one of 32 states. 👏</p>    
-            <a class="project-link" href="https://datalabitam.github.io/justicia-transparente/">Go check it out</a>
-  </div>
-  
+<div class="section-heading">
+  <p class="eyebrow">Selected work</p>
+  <h2 id="projects-title">Selected projects</h2>
+  <p class="section-intro">A few examples of work at the intersection of technology, public understanding, and human needs.</p>
 </div>
+<div class="project-grid">
+  <article class="project-card">
+    <img src="{{ '/assets/images/cara-a-cara.jpg' | relative_url }}" alt="Cara a Cara installation project" loading="lazy">
+    <div class="project-copy"><h3>Cara a Cara</h3><p>An installation using facial recognition to create a reflection on disappearances in Mexico, memory, and dignity. The project aimed to build awareness and empathy.</p><a class="text-link" href="https://www.datalabitam.org/blog/cara-a-cara/">Read about Cara a Cara</a></div>
+  </article>
+  <article class="project-card">
+    <img src="{{ '/assets/images/justicia-transparente.jpg' | relative_url }}" alt="Justice transparency data project" loading="lazy">
+    <div class="project-copy"><h3>Justicia Transparente</h3><p>A data project using Python and Selenium to analyze and explore rulings by Mexico’s Supreme Court, supporting transparency and public understanding of the justice system.</p><a class="text-link" href="https://datalabitam.github.io/justicia-transparente/">Explore Justicia Transparente</a></div>
+  </article>
+  <article class="project-card project-card-text"><div class="project-copy"><h3>Dollar Scholars</h3><p>Financial literacy initiatives that make personal finance more approachable, practical, and accessible.</p></div></article>
+  <article class="project-card project-card-text"><div class="project-copy"><h3>Publications</h3><p>“Ellas la portan, ¿sólo ellos la padecen?” — published in Blog Cuido Mi Mundo.</p></div></article>
 </div>

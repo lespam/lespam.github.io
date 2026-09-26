@@ -1,13 +1,16 @@
 ---
 layout: default
 ---
-
 {% include navigation-bar.html %}
-
-
-<div id="particles-js">
-</div>
-
-
-
-{{ content }}
+<main id="main-content" class="page-content article-page">
+  <article class="article-card">
+    <header class="article-header">
+      <p class="eyebrow"><a href="{{ '/blog/' | relative_url }}">Writing</a></p>
+      <h1>{{ page.title }}</h1>
+      <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>{% if page.categories.size > 0 %}<span aria-hidden="true"> · </span>{{ page.categories | join: ", " }}{% endif %}</p>
+      {% if page.description %}<p class="article-deck">{{ page.description }}</p>{% endif %}
+    </header>
+    <div class="prose article-content">{{ content }}</div>
+    <footer class="article-footer"><a class="text-link" href="{{ '/blog/' | relative_url }}">← All writing</a></footer>
+  </article>
+</main>

@@ -1,61 +1,10 @@
-
-<!-- BODY -->
-  <div class="navigation-bar">
-
-
-    <nav class="navbar">
-
-      <!-- LOGO -->
-
-      <div class="logo"> <a href="/#">{{ site.username }}</a></div>
-
-      <!-- NAVIGATION MENU -->
-
-      <ul class="nav-links">
-
-        <!-- USING CHECKBOX HACK -->
-
-        <input type="checkbox" id="checkbox_toggle" />
-
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
-        <!-- NAVIGATION MENUS -->
-
-        <div class="menu">
-
-          <li><a href="/">Home</a></li>
-
-          <li><a href="/#about">About</a></li>
-
-          <li><a href="/#services">Services</a>
-
-            <!-- DROPDOWN MENU 
-<li class="services">
-            <ul class="dropdown">
-
-              <li><a href="/">SQA</a></li>
-
-              <li><a href="/">Excel consultation</a></li>
-
-              <li><a href="/">Webdev</a></li>
-
-              <li><a href="/">Dropdown 3</a></li>
-
-              <li><a href="/">Dropdown 4</a></li>
-
-            </ul>
-            -->
-          </li>
-
-          <li><a href="/#career">Career</a></li>
-
-          <li><a href="/#projects">Projects</a></li>
-
-          <li><a href="/#contact">Contact</a></li>
-
-        </div>
-
-      </ul>
-
-    </nav>
-  </div>
+<header class="site-header">
+  <a class="brand" href="{{ '/' | relative_url }}">Leslie Dickinson</a>
+  <nav aria-label="Main navigation">
+    <ul class="nav-links">
+      {% for item in site.data.navigation %}
+      <li><a href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

@@ -1,4 +1,12 @@
 - name: Home
   link: /
 - name: About
-  link: /about.html
+  link: /#about
+- name: Experience
+  link: /#career
+- name: Projects
+  link: /#projects
+- name: Writing
+  link: /blog/
+- name: Contact
+  link: /#contact

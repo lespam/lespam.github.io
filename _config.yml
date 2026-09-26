@@ -1,17 +1,18 @@
 # Site settings
-title: Leslie Dickinson's Website
-description: Leslie Dickinson's Website
+title: Leslie Dickinson | Portfolio and Blog
+description: Leslie Dickinson is a software quality engineer sharing selected projects, career experience, and writing about quality, technology, and people.
 baseurl: "" # the subpath of your site, e.g. /blog
 #baseurl: "" # the subpath of your site, e.g. /blog
-domain: "lesliedickinson.dev/"
+domain: "lesliedickinson.dev"
 #domain: "lespam.fun"
 url: "https://lesliedickinson.dev" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 # url: "https://lespam.fun"
 # User settings
 username: Leslie Dickinson
-user_description: A software quality engineer with 5+ years of experience in manual and automatic testing who can plan, execute, and report test cases, as well as coordinate with developers and stakeholders to ensure the security, quality and functionality of the software products
-user_title: Software QA Tester, Test Automation Engineer, UX expert, Bilingual
-#email: lesliepbv@gmail.com
+user_title: SDET and Quality Engineer | Test Automation | Enterprise Systems
+permalink: /blog/:year/:month/:day/:title/
+excerpt_separator: <!--more-->
+email: lesliepbv@gmail.com
 #blog_url: /blog
 # twitter_username: lorem_ipsum
 instagram_username: artechnolution
@@ -24,7 +25,4 @@ github_username:  lespam
 # medium_url: lorem_ipsum.medium.com
 # gplus_username:  lorem_ipsum
 
-#plugins:
- #- jekyll-feed
- #- jekyll-remote-theme
 exclude: ['src' , 'node_modules']

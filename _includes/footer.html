@@ -1,7 +1,4 @@
-<footer class="footer">
-    <!-- <p>&copy; {{ site.username }}</p> -->
-    <p>With <span class="love">❤</span>. <a href="https://github.com/lespam">L. P. Dickinson</a>. 2026 All rights reserved.</p>
+<footer class="site-footer">
+  <p>© {{ 'now' | date: '%Y' }} Leslie Dickinson</p>
+  <p><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a> · <a href="https://github.com/{{ site.github_username }}">View this site on GitHub</a></p>
 </footer>
-<script src="{{ '/assets/js/particles.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
