@@ -1,4 +1,4 @@
 <footer class="site-footer">
   <p>© {{ 'now' | date: '%Y' }} Leslie Dickinson</p>
-  <p><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a> · <a href="https://github.com/{{ site.github_username }}">View this site on GitHub</a></p>
+  <p><a href="{{ '/feed.xml' | relative_url }}">{% if page.lang == 'es-MX' %}Canal RSS{% else %}RSS feed{% endif %}</a> · <a href="https://github.com/{{ site.github_username }}">{% if page.lang == 'es-MX' %}Ver el sitio en GitHub{% else %}View this site on GitHub{% endif %}</a></p>
 </footer>

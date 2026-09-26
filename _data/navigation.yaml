@@ -1,12 +1,26 @@
-- name: Home
-  link: /
-- name: About
-  link: /#about
-- name: Experience
-  link: /#career
-- name: Projects
-  link: /#projects
-- name: Writing
-  link: /blog/
-- name: Contact
-  link: /#contact
+en:
+  - name: Home
+    link: /en/
+  - name: About
+    link: /en/#about
+  - name: Experience
+    link: /en/#career
+  - name: Projects
+    link: /en/#projects
+  - name: Writing
+    link: /en/blog/
+  - name: Contact
+    link: /en/#contact
+es:
+  - name: Inicio
+    link: /es/
+  - name: Acerca de mí
+    link: /es/#about
+  - name: Experiencia
+    link: /es/#career
+  - name: Proyectos
+    link: /es/#projects
+  - name: Blog
+    link: /es/blog/
+  - name: Contacto
+    link: /es/#contact

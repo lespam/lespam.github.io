@@ -1,8 +1,8 @@
-$ink: #142b3b;
-$muted: #405463;
-$brand: #075b73;
-$brand-dark: #084858;
-$surface: #ffffff;
-$page: #f1f6f8;
-$border: #c7d5dc;
+$ink: var(--ink, #142b3b);
+$muted: var(--muted, #405463);
+$brand: var(--brand, #075b73);
+$brand-dark: var(--brand-dark, #084858);
+$surface: var(--surface, #ffffff);
+$page: var(--page, #f1f6f8);
+$border: var(--border, #c7d5dc);
 $cut: 768px;

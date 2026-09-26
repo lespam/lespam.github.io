@@ -1,3 +1,6 @@
+{% if page.lang == 'es-MX' %}
+<div class="contact-panel"><p class="eyebrow">Conversemos</p><h2 id="contact-title">¿Te interesa la calidad de software y la tecnología útil?</h2><p>Si estás lanzando una aplicación, mejorando un producto o buscando publicaciones más seguras y accesibles, me encantará conocer tu proyecto. Me interesan especialmente QA, automatización, sistemas empresariales, ERP, tecnología financiera y proyectos que ayudan a las personas.</p><div class="hero-actions"><a class="button button-primary" href="mailto:{{ site.email }}">Escríbeme</a><a class="button button-secondary" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">Conectemos en LinkedIn</a></div></div>
+{% else %}
 <div class="contact-panel">
   <p class="eyebrow">Let’s connect</p>
   <h2 id="contact-title">Interested in quality engineering and useful technology?</h2>
@@ -7,3 +10,4 @@
     <a class="button button-secondary" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">Connect on LinkedIn</a>
   </div>
 </div>
+{% endif %}

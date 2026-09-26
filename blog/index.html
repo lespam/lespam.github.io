@@ -2,18 +2,21 @@
 layout: default
 title: Writing | Leslie Dickinson
 description: Essays and notes on software quality, technology, and people.
+lang: en
+translation_url: /es/blog/
 permalink: /blog/
 ---
 {% include navigation-bar.html %}
 <main id="main-content" class="page-content archive-page">
   <header class="archive-header">
-    <p class="eyebrow">Notes, essays, and things I’m learning</p>
+    <p class="eyebrow">Notes and essays</p>
     <h1>Writing</h1>
-    <p class="section-intro">Thoughts on software quality, technology, community, and the people our tools are meant to serve.</p>
+    <p class="section-intro">I write to understand how technology, culture, and community life connect. Each piece starts with a question or an everyday practice, then follows the context around it. These are works in progress as much as conclusions.</p>
   </header>
-  {% if site.posts.size > 0 %}
+  {% assign posts_en = site.posts | where_exp: "post", "post.lang != 'es-MX'" %}
+  {% if posts_en.size > 0 %}
   <div class="post-list">
-    {% for post in site.posts %}
+    {% for post in posts_en %}
     <article class="post-card post-list-item">
       <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>{% if post.categories.size > 0 %}<span aria-hidden="true"> · </span>{{ post.categories | join: ", " }}{% endif %}</p>
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>

@@ -1,10 +1,17 @@
+{% assign current_lang = page.lang | default: 'en' %}
 <header class="site-header">
-  <a class="brand" href="{{ '/' | relative_url }}">Leslie Dickinson</a>
-  <nav aria-label="Main navigation">
+  <a class="brand" href="{% if current_lang == 'es-MX' %}{{ '/es/' | relative_url }}{% else %}{{ '/en/' | relative_url }}{% endif %}">Leslie Dickinson</a>
+  <nav aria-label="{% if current_lang == 'es-MX' %}Navegación principal{% else %}Main navigation{% endif %}">
     <ul class="nav-links">
-      {% for item in site.data.navigation %}
+      {% assign nav_items = site.data.navigation.en %}
+      {% if current_lang == 'es-MX' %}{% assign nav_items = site.data.navigation.es %}{% endif %}
+      {% for item in nav_items %}
       <li><a href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
       {% endfor %}
     </ul>
   </nav>
+  <div class="header-tools">
+    <a class="language-link" href="{% if current_lang == 'es-MX' %}{{ page.translation_url | default: '/en/' | relative_url }}{% else %}{{ page.translation_url | default: '/es/' | relative_url }}{% endif %}" lang="{% if current_lang == 'es-MX' %}en{% else %}es-MX{% endif %}" hreflang="{% if current_lang == 'es-MX' %}en{% else %}es-MX{% endif %}" aria-label="{% if current_lang == 'es-MX' %}View in English{% else %}Ver en español de México{% endif %}">{% if current_lang == 'es-MX' %}EN{% else %}ES{% endif %}</a>
+    <button class="theme-toggle" type="button" aria-label="{% if current_lang == 'es-MX' %}Cambiar tema claro u oscuro{% else %}Switch light or dark theme{% endif %}" aria-pressed="false" data-theme-toggle><span aria-hidden="true" class="theme-icon">◐</span><span class="theme-label">{% if current_lang == 'es-MX' %}Tema{% else %}Theme{% endif %}</span></button>
+  </div>
 </header>

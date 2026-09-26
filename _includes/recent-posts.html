@@ -1,21 +1,22 @@
 <div class="section-heading">
-  <p class="eyebrow">From the blog</p>
-  <h2 id="writing-title">Notes on quality, technology, and people</h2>
-  <p class="section-intro">Ideas, things I’m learning, and occasional notes from beyond the day job.</p>
+  <p class="eyebrow">{% if page.lang == 'es-MX' %}Notas y ensayos{% else %}Notes and essays{% endif %}</p>
+  <h2 id="writing-title">{% if page.lang == 'es-MX' %}Ideas en contexto{% else %}Ideas in context{% endif %}</h2>
+  <p class="section-intro">{% if page.lang == 'es-MX' %}Escribo para entender mejor cómo se relacionan la tecnología, la cultura y la vida en comunidad. A veces empiezo con una pregunta; el texto es el camino para explorarla.{% else %}I write to better understand how technology, culture, and community life connect. Sometimes I begin with a question; the writing is a way to follow it.{% endif %}</p>
 </div>
-{% assign recent_posts = site.posts | slice: 0, 3 %}
+{% if page.lang == 'es-MX' %}{% assign recent_posts = site.posts | where: "lang", "es-MX" %}{% else %}{% assign recent_posts = site.posts | where: "lang", "en" %}{% endif %}
+{% assign recent_posts = recent_posts | slice: 0, 3 %}
 {% if recent_posts.size > 0 %}
 <div class="post-grid">
   {% for post in recent_posts %}
   <article class="post-card">
-    <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></p>
+    <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{% if page.lang == 'es-MX' %}{{ post.date | date: "%d/%m/%Y" }}{% else %}{{ post.date | date: "%B %-d, %Y" }}{% endif %}</time></p>
     <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
     <p>{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 180 }}</p>
-    <a class="text-link" href="{{ post.url | relative_url }}">Read this post <span aria-hidden="true">→</span></a>
+    <a class="text-link" href="{{ post.url | relative_url }}">{% if page.lang == 'es-MX' %}Leer esta publicación{% else %}Read this post{% endif %} <span aria-hidden="true">→</span></a>
   </article>
   {% endfor %}
 </div>
 {% else %}
-<p class="prose">New writing is on the way.</p>
+<p class="prose">{% if page.lang == 'es-MX' %}Pronto habrá nuevas publicaciones.{% else %}New writing is on the way.{% endif %}</p>
 {% endif %}
-<p class="archive-link"><a class="text-link" href="{{ '/blog/' | relative_url }}">Browse all writing →</a></p>
+<p class="archive-link"><a class="text-link" href="{% if page.lang == 'es-MX' %}{{ '/es/blog/' | relative_url }}{% else %}{{ '/en/blog/' | relative_url }}{% endif %}">{% if page.lang == 'es-MX' %}Ver todas las publicaciones{% else %}Browse all writing{% endif %} →</a></p>

@@ -1,8 +1,18 @@
+{% if page.lang == 'es-MX' %}
+<div class="section-heading"><p class="eyebrow">Trabajo seleccionado</p><h2 id="projects-title">Proyectos destacados</h2><p class="section-intro">Algunos proyectos en la intersección de tecnología, conocimiento público y necesidades humanas.</p></div>
+<div class="project-grid">
+  <article class="project-card"><img src="{{ '/assets/images/cara-a-cara.jpg' | relative_url }}" alt="Instalación artística Cara a Cara" loading="lazy"><div class="project-copy"><h3>Cara a Cara</h3><p>Instalación que usa reconocimiento facial para reflexionar sobre las desapariciones en México, la memoria y la dignidad, y generar conciencia y empatía.</p><a class="text-link" href="https://www.datalabitam.org/blog/cara-a-cara/">Conoce Cara a Cara</a></div></article>
+  <article class="project-card"><img src="{{ '/assets/images/justicia-transparente.jpg' | relative_url }}" alt="Proyecto de datos Justicia Transparente" loading="lazy"><div class="project-copy"><h3>Justicia Transparente</h3><p>Proyecto de datos con Python y Selenium para analizar y explorar sentencias de la Suprema Corte de Justicia de la Nación y facilitar la transparencia.</p><a class="text-link" href="https://datalabitam.github.io/justicia-transparente/">Explora Justicia Transparente</a></div></article>
+  <article class="project-card project-card-text"><div class="project-copy"><h3>Dollar Scholars</h3><p>Iniciativas de educación financiera que hacen las finanzas personales más claras, prácticas y accesibles.</p></div></article>
+  <article class="project-card project-card-text"><div class="project-copy"><h3>Publicaciones</h3><p>“Ellas la portan, ¿sólo ellos la padecen?” — publicado en Blog Cuido Mi Mundo.</p></div></article>
+</div>
+{% else %}
 <div class="section-heading">
   <p class="eyebrow">Selected work</p>
   <h2 id="projects-title">Selected projects</h2>
   <p class="section-intro">A few examples of work at the intersection of technology, public understanding, and human needs.</p>
 </div>
+{% endif %}
 <div class="project-grid">
   <article class="project-card">
     <img src="{{ '/assets/images/cara-a-cara.jpg' | relative_url }}" alt="Cara a Cara installation project" loading="lazy">

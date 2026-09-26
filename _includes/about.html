@@ -1,12 +1,21 @@
-<div class="section-heading">
-  <p class="eyebrow">A little about me</p>
-  <h2 id="about-title">Quality engineering for software people can rely on</h2>
-</div>
+{% if page.lang == 'es-MX' %}
+<div class="section-heading"><p class="eyebrow">Un poco sobre mí</p><h2 id="about-title">Calidad de software para crear productos confiables</h2></div>
 <div class="prose">
-  <p>I’m Leslie, a software quality engineer, developer, and social justice advocate. I started as a computer engineer who loved technology and wanted to help people. That still guides my work: software should make life easier, and people should never be blamed for confusing, unusable, or defective experiences.</p>
-  <p>I bring more than five years of experience in manual and automated testing, including test planning, execution, defect reporting, documentation, and close collaboration with developers and stakeholders. I enjoy troubleshooting complex problems, asking careful questions, and turning a messy workflow into something a team can understand and trust.</p>
-  <p>I have contributed to Llave CDMX, a platform serving more than 1.6 million citizens monthly; Freshly, supporting more than one million meals each week; and Mutuo, a fintech that secured more than $100 million in financing. I currently work as a QA Analyst at The Chronicle of Higher Education.</p>
-  <h3>People, community, and a life outside the screen</h3>
-  <p>I lead an online economics community of more than 2,000 members. My partner and I met there while talking about economics, gender, and social justice; we fell in love and got married. We live in the United States with our dog, Timea. We work from home, play Overwatch 2, and raid EverQuest with the Machin Shin guild on Xegony.</p>
-  <p>I care about diversity and inclusion, women’s issues, inequality, public health, animal welfare, and financial literacy. My mission is to use technology, empathy, active listening, and accessible communication to help people.</p>
+  <p>Soy Leslie: ingeniera de calidad de software, desarrolladora, mexicana y defensora de la justicia social. Llegué a la ingeniería porque me fascinaba la tecnología y quería que sirviera para ayudar. Sigo creyendo que una buena experiencia importa tanto como que el sistema funcione: nadie debería cargar con la culpa de un producto confuso, inaccesible o defectuoso.</p>
+  <p>Tengo más de cinco años de experiencia en pruebas manuales y automatizadas, desde planear escenarios hasta investigar errores con desarrollo y producto. Me gusta hacer preguntas, encontrar el detalle que se escapó y dejar un proceso más claro de como lo encontré.</p>
+  <p>He colaborado en Llave CDMX, que atiende a más de 1.6 millones de personas al mes; Freshly, que preparaba más de un millón de comidas por semana; y Mutuo, una empresa fintech. Actualmente trabajo como analista de QA en The Chronicle of Higher Education.</p>
+  <h3>También soy persona fuera del trabajo</h3>
+  <p>Coordino una comunidad de economía en línea con más de 2,000 integrantes. Mi pareja y yo nos conocimos ahí hablando de economía, género y justicia social; después nos enamoramos y nos casamos. Hoy vivimos en Estados Unidos con nuestra perrita Timea. Trabajamos desde casa, jugamos Overwatch 2 y hacemos incursiones en EverQuest con el gremio Machin Shin.</p>
+  <p>Me importan la diversidad, los derechos de las mujeres, la salud pública, el bienestar animal y la educación financiera. También me interesa comprender cómo las prácticas cotidianas —en la tecnología y fuera de ella— reflejan las instituciones, las relaciones y las condiciones en que vivimos.</p>
 </div>
+{% else %}
+<div class="section-heading"><p class="eyebrow">A little about me</p><h2 id="about-title">Quality engineering for software people can rely on</h2></div>
+<div class="prose">
+  <p>I’m Leslie: a software quality engineer, developer, Mexican, and social justice advocate. I found my way into engineering because I loved technology and wanted it to help people. I still believe a good experience matters as much as a working system; no one should have to blame themselves for a confusing, inaccessible, or broken product.</p>
+  <p>I have more than five years of experience in manual and automated testing, from planning scenarios to investigating bugs with engineering and product teams. I like asking questions, finding the detail that slipped through, and leaving a process clearer than I found it.</p>
+  <p>I have contributed to Llave CDMX, serving more than 1.6 million people each month; Freshly, preparing more than one million meals a week; and fintech company Mutuo. I currently work as a QA Analyst at The Chronicle of Higher Education.</p>
+  <h3>A person outside work, too</h3>
+  <p>I lead an online economics community of more than 2,000 members. My partner and I met there talking about economics, gender, and social justice; later, we fell in love and got married. We now live in the United States with our dog, Timea. We work from home, play Overwatch 2, and raid in EverQuest with the Machin Shin guild.</p>
+  <p>I care about diversity, women’s issues, public health, animal welfare, and financial literacy. I’m also interested in how everyday practices—in technology and beyond it—reflect the institutions, relationships, and conditions in which we live.</p>
+</div>
+{% endif %}

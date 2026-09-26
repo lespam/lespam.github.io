@@ -1,16 +1,24 @@
 <section class="hero" aria-labelledby="hero-title">
-  <div id="particles-js" aria-hidden="true"></div>
+  <div class="hero-texture" aria-hidden="true"></div>
+  <div class="hero-art" aria-hidden="true"><lottie-player src="{{ '/assets/animations/quality-orbit.json' | relative_url }}" background="transparent" speed="0.6" loop autoplay></lottie-player></div>
   <div class="hero-inner">
-    <p class="eyebrow">Quality engineering · thoughtful technology · accessible experiences</p>
-    <h1 id="hero-title">{{ site.username }}</h1>
-    <p class="hero-summary">{{ site.user_title }}</p>
-    <div class="hero-actions">
-      <a class="button button-primary" href="#projects">Explore selected work</a>
-      <a class="button button-secondary" href="{{ '/blog/' | relative_url }}">Read the blog</a>
+    <div class="hero-copy">
+      <p class="eyebrow">{% if page.lang == 'es-MX' %}Ingeniera mexicana · tecnología y vida cotidiana{% else %}Mexican engineer · technology and everyday life{% endif %}</p>
+      <h1 id="hero-title">{% if page.lang == 'es-MX' %}Hola, soy Leslie.{% else %}Hello, I’m Leslie.{% endif %}</h1>
+      <p class="hero-summary">{% if page.lang == 'es-MX' %}Me interesa entender cómo funcionan las cosas y a quiénes sirven: desde los sistemas que probamos hasta las prácticas que construimos en comunidad.{% else %}I’m interested in how things work and whom they serve: from the systems we test to the practices we build together in communities.{% endif %}</p>
+      <p class="hero-role">{% if page.lang == 'es-MX' %}Ingeniería de calidad · accesibilidad · sistemas centrados en las personas{% else %}Quality engineering · accessibility · people-centered systems{% endif %}</p>
     </div>
-    <ul class="social-links" aria-label="Professional profiles">
+    <div class="hero-actions">
+      <a class="button button-primary" href="#projects">{% if page.lang == 'es-MX' %}Ver proyectos{% else %}Explore selected work{% endif %}</a>
+      <a class="button button-secondary" href="{% if page.lang == 'es-MX' %}{{ '/es/blog/' | relative_url }}{% else %}{{ '/en/blog/' | relative_url }}{% endif %}">{% if page.lang == 'es-MX' %}Leer el blog{% else %}Read the blog{% endif %}</a>
+    </div>
+    <ul class="social-links" aria-label="{% if page.lang == 'es-MX' %}Perfiles profesionales{% else %}Professional profiles{% endif %}">
       <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a></li>
       <li><a href="https://github.com/{{ site.github_username }}">GitHub</a></li>
     </ul>
   </div>
+  <figure class="hero-portrait">
+    <img src="{{ '/assets/images/leslie-cartoon-avatar.png' | relative_url }}" alt="{% if page.lang == 'es-MX' %}Avatar caricaturizado de Leslie, con iluminación magenta y cian{% else %}Cartoon avatar of Leslie with magenta and cyan lighting{% endif %}" fetchpriority="high">
+    <figcaption>{% if page.lang == 'es-MX' %}Leslie Dickinson · ingeniera de calidad{% else %}Leslie Dickinson · quality engineer{% endif %}</figcaption>
+  </figure>
 </section>

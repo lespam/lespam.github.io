@@ -1,0 +1,14 @@
+---
+layout: default
+title: Blog | Leslie Dickinson
+description: Publicaciones sobre calidad de software, tecnología y las personas.
+lang: es-MX
+translation_url: /en/blog/
+permalink: /es/blog/
+---
+{% include navigation-bar.html %}
+<main id="main-content" class="page-content archive-page">
+  <header class="archive-header"><p class="eyebrow">Notas y ensayos</p><h1>Blog</h1><p class="section-intro">Escribo para entender mejor cómo se relacionan la tecnología, la cultura y la vida en comunidad. Cada texto parte de una pregunta o una práctica cotidiana y sigue el contexto que la rodea. Son procesos de exploración, no siempre conclusiones.</p></header>
+  {% assign posts_es = site.posts | where: "lang", "es-MX" %}
+  {% if posts_es.size > 0 %}<div class="post-list">{% for post in posts_es %}<article class="post-card post-list-item"><p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d/%m/%Y" }}</time></p><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>{% if post.description %}<p>{{ post.description }}</p>{% else %}<p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 240 }}</p>{% endif %}<a class="text-link" href="{{ post.url | relative_url }}">Leer publicación →</a></article>{% endfor %}</div>{% else %}<p class="prose">Pronto habrá nuevas publicaciones.</p>{% endif %}
+</main>
