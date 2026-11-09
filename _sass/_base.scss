@@ -114,6 +114,16 @@ section[id] { padding-top: 5rem; scroll-margin-top: 4.5rem; }
 .project-card-text { display: flex; align-items: center; min-height: 185px; background: #e7f1f4; }
 :root[data-theme="dark"] .project-card-text { background: #223d4b; }
 
+/* Proyecto destacado (Koza-TTP) */
+.project-card-featured { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); }
+.project-card-featured .project-shot { height: 100%; min-height: 260px; object-position: left top; border-right: 1px solid $border; }
+.project-tag { margin: 0 0 .5rem; color: $brand-dark; font-weight: 700; font-size: 1rem; }
+.project-links { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.25rem; margin-top: 1.25rem; }
+.project-links .text-link { margin-top: 0; }
+.button-brand { background: $brand-dark; color: $surface; }
+.button-brand:hover { background: $brand; color: $surface; }
+.project-copy .project-note { margin-top: .75rem; color: $ink; font-weight: 700; }
+
 .archive-page, .article-page { min-height: 65vh; padding-top: 5rem; }
 .archive-header { max-width: 760px; padding: 2rem 0 3rem; }
 .archive-header .eyebrow { color: #a52e76; font-style: italic; letter-spacing: .08em; }
@@ -177,6 +187,8 @@ section[id] { padding-top: 5rem; scroll-margin-top: 4.5rem; }
   .experience-heading { grid-template-columns: 1fr; }
   .experience-heading h3, .organization, .date { grid-column: 1; grid-row: auto; }
   .skills-grid, .project-grid, .post-grid { grid-template-columns: 1fr; }
+  .project-card-featured { grid-template-columns: 1fr; }
+  .project-card-featured .project-shot { height: 220px; min-height: 0; border-right: 0; }
   .site-footer { flex-direction: column; margin-top: 3rem; padding: 1.25rem; }
 }
 
